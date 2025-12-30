@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>CAD TO CARBON - Coming Soon</title>
     <style>
         * {
             box-sizing: border-box;
@@ -14,6 +13,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            /* Carbon Fiber CSS Pattern */
             background: 
                 linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
                 linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0,
@@ -24,38 +24,41 @@
             background-color: #131313;
             background-size: 20px 20px;
             color: #ffffff;
+            
             display: flex;
-            flex-direction: column; /* Stack logo above container */
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start; /* Raises the stack from the center */
             min-height: 100vh;
             text-align: center;
-            padding: 20px;
+            padding: 10vh 20px 40px 20px; /* 10vh padding at the top pushes the logo to a better height */
         }
 
         /* Logo Styling */
         .logo {
-            max-width: 1200px; /* Adjust this to change logo size */
+            max-width: 280px; /* Slightly larger for impact */
             height: auto;
-            margin-bottom: 0px; /* Space between logo and box */
+            margin-bottom: 60px; /* Increased space between logo and box */
             display: block;
+            image-rendering: pixelated; /* Keeps pixel art sharp */
+            image-rendering: crisp-edges;
         }
 
         .container {
             padding: 40px;
             max-width: 600px;
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.75); /* Slightly darker for better contrast */
+            backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 20px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.7);
         }
 
         .badge {
             display: inline-block;
             background: #ff3e3e;
             color: white;
-            padding: 5px 15px;
+            padding: 6px 16px;
             border-radius: 20px;
             font-size: 0.75rem;
             font-weight: 700;
@@ -65,7 +68,7 @@
         }
 
         h1 {
-            font-size: clamp(2rem, 8vw, 3.5rem);
+            font-size: clamp(2.2rem, 8vw, 3.8rem);
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 20px;
@@ -74,13 +77,13 @@
 
         p {
             font-size: 1.1rem;
-            color: #bbb;
+            color: #ccc;
             line-height: 1.6;
             margin-bottom: 40px;
         }
 
         .loader {
-            width: 60px;
+            width: 80px;
             height: 3px;
             background: #333;
             margin: 0 auto;
@@ -107,15 +110,14 @@
 </head>
 <body>
 
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="logo.png" alt="CAD TO CARBON Logo" class="logo">
 
     <div class="container">
-        <div class="badge">System Status: in production</div>
+        <div class="badge">System Status: In Production</div>
         <h1>Something cool is coming.</h1>
-        <p>We're currently working on production. <p>
-        <p>Check back soon for the reveal of our NEW Carbon fiber composite foam core reinforced motorsport grade body panels.</p>
+        <p>We're currently working on production.<br><br>Check back soon for the reveal of our NEW Carbon fiber composite foam core reinforced motorsport grade body panels.</p>
         <div class="loader"></div>
-    </div
+    </div>
 
 </body>
 </html>
